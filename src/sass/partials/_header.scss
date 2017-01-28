@@ -11,12 +11,17 @@
 	.nav img {
 		height: 40px;
 	}
+	.user-icon{
+		
+	}
 	.user-icon::before{
 		content: url(../img/user.png);
+		vertical-align: middle;
 		position: absolute;
 		left: -24px;
 		/*top: 2px;*/
-		z-index: 100;
+		top: -2px;
+		z-index: 1;
 	}
 	.nav li a {
 		height: 20px;
@@ -29,6 +34,7 @@
 	    font-family: 'PFBeauSansPro Reg', sans-serif;
 	    margin: 0 0 0 34px;
 	    padding: 15px 0;
+	    line-height: 14px;
 	}
 	.nav li:first-child {
 		/*margin: 0;*/
@@ -38,7 +44,12 @@
 	    /*font-family: 'PFBeauSansPro Bold', sans-serif;*/
 	    font-weight: 800;
 	    border-bottom: 2px solid $dark-blue-green-color;
-}
+	}
+	.navbar-default .navbar-nav > .active > a{
+		color: $dark-blue-green-color;
+		font-weight: 800;
+		background-color: $yellow-base-color;
+	}
 	.avt li {
 		margin: 0 0 0 60px;
 	}

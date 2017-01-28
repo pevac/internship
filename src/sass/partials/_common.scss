@@ -2,11 +2,6 @@ html {
  height: 100%;
 }
 
-body>.dev-studio>section{
-  padding-top: 150px;
-  padding-bottom: 75px;
-}
-
 body{
   font-family: "PFBeauSansPro Light", sans-serif;
   width: 100%;
@@ -15,12 +10,14 @@ body{
   flex-direction: column;
 }
 
-.dev-studio{
-  background-image: url("../img/dev.png");
-  background-repeat: no-repeat;
+.internship{
+   /*background-image: url("../img/internship.png");
+  background-repeat: no-repeat;*/
   background-size: 100%;
   margin-top: 50px;
   flex: 1 0 auto;
+  position: relative;
+  z-index: 0;
 }
 
 

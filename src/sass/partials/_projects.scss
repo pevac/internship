@@ -1,0 +1,244 @@
+.projects{
+	background-image: url(../img/projects.png);
+	background-position: center;
+	padding-top: 50px;
+	padding-bottom: 90px;
+	position: relative;
+	top: -156px;
+	z-index: -3;
+	h2{
+		font-family: 'PFBeauSansPro Bold', sans-serif;
+		font-size: 24px;
+		color: $dark-blue-green-color;
+		text-align: center;
+	}
+	h3{
+		font-family: 'PFBeauSansPro SemiBold', sans-serif;
+		font-size: 24px;
+		color: $dark-blue-green-color;
+		text-transform: uppercase;
+	}
+	h4{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 20px;
+		color: $dark-blue-green-color;
+	}
+	h5{
+		font-family: 'PFBeauSansPro Bold', sans-serif;
+		font-size: 18px;
+		color: $base-dark-color;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	h6{
+		font-family: 'PFBeauSansPro SemiBold', sans-serif;
+		font-size: 16px;
+		color: $base-dark-color;
+		line-height: 1.4;
+		
+	}
+	p{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 14px;
+		color: $base-dark-color;
+		line-height: 1.6;
+	}
+	h6 img{
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+	h6 span{
+		width: 60%;
+		display: inline-block;
+		padding-top: 20px;
+		padding-left: 20px;
+		float: right;
+	}
+	.both{
+		clear: both;
+		margin-bottom: 20px;
+	}
+	.caption_second h3, .caption_sixth h3, .caption_second h4, .caption_sixth h4{
+		color: $base-light-color;
+	}
+	.lines{
+		padding: 18px 0;
+	}
+	.lines:first-child{
+		padding-left: 6%;
+	}
+	.lines:last-child{
+		padding-right: 6%;
+	}
+	.line{
+		width: 100%;
+		height: 2px;
+		background-color: $base-dark-color;
+		opacity: 0.6;
+		display: inline-block;
+	}
+	.carousel {
+    margin-bottom: 0;
+    padding: 10px 10px 10px 10px;
+    margin-left: -5.4%;
+    margin-right: -5.4%;
+	}
+	/* The controlsy */
+	.carousel-control {
+	    left: -12px;
+	    height: 40px;
+		width: 40px;
+	    background: none repeat scroll 0 0 #222222;
+	    border: 4px solid #FFFFFF;
+	    border-radius: 23px 23px 23px 23px;
+	    margin-top: 90px;
+	    margin-bottom: 10px; 
+	}
+	.carousel-control.right {
+		left: 1210px;
+	}
+	.thumbnail.step_left{
+		width: 288.266px;
+		height: 230.797px;
+		position: absolute;
+		z-index: 1;
+		top: 2px;
+		line-height: 220px;
+		text-align: center;
+		background-color: $blue-base-color;
+	}
+	.thumbnail.step_right{
+		width: 288.266px;
+		height: 230.797px;
+		position: absolute;
+		z-index: 1;
+		right: -940px;
+		top: 260.797px;	
+		line-height: 220px;
+		text-align: center;
+		background-color: $blue-base-color;
+	}
+	.item .thumbnail.hidden{
+		visibility: hidden;
+	}
+	.item div.col-md-3{
+		margin-bottom: 30px;
+	}
+	.proj{
+
+	}
+	.thumbnail.effects{
+		position: relative;
+	}
+	.thumbnail .caption{
+		position: absolute;
+	}
+	.caption{
+		text-align: center;
+		padding-top: 60px; 
+	}
+	.caption img{
+		position: absolute;
+	}
+	.caption_first{
+		width: 288.266px;
+		height: 230.797px;
+		background-color: $pink-base-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.caption_second{
+		width: 288.266px;
+		height: 230.797px;	
+		background-color: $blue-base-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.caption_third{
+		width: 288.266px;
+		height: 230.797px;
+		background-color: $yellow-base-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.caption_fourth{
+		width: 288.266px;
+		height: 230.797px;
+		background-color: $light-pink-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.caption_fiveth{
+		width: 288.266px;
+		height: 230.797px;
+		background-color: $azure-base-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.caption_sixth{
+		width: 288.266px;
+		height: 230.797px;
+		background-color: $dark-pink-hover-color;
+		opacity: 0.9;
+		visibility: hidden;
+	}
+	.effect_first:hover .caption_first{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.effect_second:hover .caption_second{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.effect_third:hover .caption_third{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.effect_fourth:hover .caption_fourth{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.effect_fiveth:hover .caption_fiveth{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.effect_sixth:hover .caption_sixth{
+		visibility: visible;
+		cursor: pointer;
+	}
+	.information{
+		width: 606.532px;
+		height: 491.594px;
+		padding: 40px 20px;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		z-index: 2;
+		display: none;
+		background-color: $light-purple-color;
+	}
+	.close_information{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.information.information_first{
+		left: 318.266px;
+	}
+	.information.information_second{
+		left: 318.266px;
+	}
+	.information.information_third{
+		left: 636.266px;
+	}
+	.information.information_fourth{
+		
+	}
+	.information.information_fiveth{
+		left: 318.266px;
+	}
+	.information.information_sixth{
+		left: 318.266px;
+	}
+}

@@ -1,2 +1,103 @@
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar";
 
+.header {
+	.navbar-yellow {
+		background-color: $yellow-base-color;
+	}
+
+	.navbar-brand {
+		padding: 5px 10px 5px 10px;
+	}
+	.nav img {
+		height: 40px;
+	}
+	.user-icon::before{
+		content: url(../img/user.png);
+		position: absolute;
+		left: -24px;
+		/*top: 2px;*/
+		z-index: 100;
+	}
+	.nav li a {
+		height: 20px;
+    	color: $base-dark-color;
+    	padding: 0;
+	}
+	.nav li {
+	    height: 50px;
+	    font-size: 14pt;
+	    font-family: 'PFBeauSansPro Reg', sans-serif;
+	    margin: 0 0 0 34px;
+	    padding: 15px 0;
+	}
+	.nav li:first-child {
+		/*margin: 0;*/
+	}
+	.nav li a:hover {
+	    color: $dark-blue-green-color;
+	    /*font-family: 'PFBeauSansPro Bold', sans-serif;*/
+	    font-weight: 800;
+	    border-bottom: 2px solid $dark-blue-green-color;
+}
+	.avt li {
+		margin: 0 0 0 60px;
+	}
+	.avt li a {
+		color: $base-light-color;
+		font-family: 'PFBeauSansPro Bold', sans-serif;
+		font-weight: 800;
+	}
+	.avt li a:hover {
+    	color: $dark-blue-green-color;
+		border-bottom: 0px;
+	}
+	.navbar-default .navbar-header .navbar-toggle{
+		border-color: $yellow-base-color;
+	}
+	.navbar-default .navbar-header .navbar-toggle span{
+		background-color: $light-gray-color;
+	}
+	.navbar-default .navbar-header .navbar-toggle:hover{
+		border-color: $light-gray-color;
+		background-color: transparent;
+	}
+	.navbar-default .navbar-header .navbar-toggle:hover span{
+		background-color: $gray-base-color;
+	}
+	.navbar-default .navbar-header .navbar-toggle:focus{
+		border-color: $light-gray-color;
+		background-color: transparent;
+	}
+	.navbar-default .navbar-header .navbar-toggle:focus span{
+		background-color: $gray-base-color;
+	}
+}
+
+@media(max-width: 1200px){
+    .header .nav li{margin: 0 0 0 24px;}
+    .header .nav li a{font-size: 12pt;}
+}
+
+@media(max-width: 1000px){
+    .header .nav li{margin: 0 0 0 10px;}
+    .header .nav li a{font-size: 12pt;}
+    .header .navbar-yellow .navbar-collapse{padding-left: 34px;}
+    .header .navbar-yellow .avt{padding: 0 0 0 10px;}
+}
+
+@media(max-width: 992px){
+	.header .nav li a{font-size: 10pt;}
+	.header .navbar-yellow .avt{padding: 0;}
+}
+
+@media(max-width: 767px){
+    .header .nav li{margin: 10px; display: inline-block;}
+    .header .nav li a{font-size: 12pt;}
+    .header .nav li a:hover{border-bottom: none;}
+    .header .avt{display: none;}
+}
+
+@media(max-width: 740px){
+	.header .nav li{height: 30px; padding: 6px 0; display: block;}
+    .header .nav li a{font-size: 12pt;}
+}

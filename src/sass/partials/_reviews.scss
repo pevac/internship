@@ -1,0 +1,102 @@
+.reviews{
+	width: 100%;
+	background-image: url(../img/reviews.png);
+	background-position: center;
+	padding-top: 50px;
+	position: relative;
+	top: -204px;
+	z-index: -4;
+	padding-bottom: 228px;
+	h2{
+		font-family: 'PFBeauSansPro Bold', sans-serif;
+		font-size: 24px;
+		color: $dark-blue-green-color;
+		text-align: center;
+	}
+	h3{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 14px;
+		color: $grey-purple-color;
+	}
+	h4{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 14px;
+		color: $grey-purple-color;
+	}
+	p{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 14px;
+		color: $dark-blue-green-color;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.lines{
+		padding: 18px 0;
+	}
+	.lines:first-child{
+		padding-left: 6%;
+	}
+	.lines:last-child{
+		padding-right: 6%;
+	}
+	.line{
+		width: 100%;
+		height: 2px;
+		background-color: $base-dark-color;
+		opacity: 0.6;
+		display: inline-block;
+	}
+	.marginishka{
+		padding-top: 20px;
+	}
+	/* carousel */
+	.media-carousel {
+	  margin-bottom: 0;
+	  padding: 0 40px 50px 40px;
+	}
+	/* Changes the position of the indicators */
+	.media-carousel .carousel-indicators {
+	  right: 50%;
+	  top: auto;
+	  bottom: 0px;
+	  margin-right: -19px;
+	}
+	/* Changes the colour of the indicators */
+	.media-carousel .carousel-indicators li {
+	  background: #c0c0c0;
+	}
+	.media-carousel .carousel-indicators .active {
+	  background: #c0c0c0;
+	}
+	.media-carousel img{
+	  width: 60px;
+	  height: 60px
+	}
+	/* End carousel */
+	.item .col-md-4{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.review{
+		width: 280px;
+		height: 320px;
+		margin: auto;
+		padding: 10px;
+		text-align: center;
+	}
+	.review:hover{
+		background-color: $base-light-color;
+		box-shadow: 0px 0px 14px 0px $light-grey-shadow-color;
+	}
+	.thumbnail:hover{
+		text-decoration: none;
+	}
+	.review:hover h3{
+		font-family: 'PFBeauSansPro SemiBold', sans-serif;
+		color: $yellow-orange-color;
+	}
+	.review:hover h4{
+		color: $dark-blue-green-color;
+	}
+}

@@ -1,0 +1,82 @@
+.partners{
+	width: 100%;
+	background-color: $base-light-color;
+	padding-top: 50px;
+	position: relative;
+	top: -252px;
+	z-index: -5;
+	padding-bottom: 20px;
+	h2{
+		font-family: 'PFBeauSansPro Bold', sans-serif;
+		font-size: 24px;
+		color: $dark-blue-green-color;
+		text-align: center;
+	}
+	.lines{
+		padding: 18px 0;
+	}z
+	.lines:first-child{
+		padding-left: 6%;
+	}
+	.lines:last-child{
+		padding-right: 6%;
+	}
+	.line{
+		width: 100%;
+		height: 2px;
+		background-color: $base-dark-color;
+		opacity: 0.6;
+		display: inline-block;
+	}
+	.marginishka{
+		padding-top: 20px;
+	}
+	/* carousel */
+	.media-carousel{
+	  margin-bottom: 0;
+	  padding: 0 40px 30px 40px;
+	  margin-top: 30px;
+	}
+	/* Previous button  */
+	.media-carousel .carousel-control.left{
+	  width : 14px;
+	  height: 26px;
+	  left: -12px;
+	  background-image: none;
+	  margin-top: 40px
+	}
+	/* Next button  */
+	.media-carousel .carousel-control.right{
+	  width : 14px;
+	  height: 26px;
+	  right: -12px !important;
+	  background-image: none;
+	  margin-top: 40px
+	}
+	/* Changes the position of the indicators */
+	.media-carousel .carousel-indicators{
+	  right: 50%;
+	  top: auto;
+	  bottom: 0px;
+	  margin-right: -19px;
+	}
+	/* Changes the colour of the indicators */
+	.media-carousel .carousel-indicators li{
+	  background: #c0c0c0;
+	}
+	.media-carousel .carousel-indicators .active{
+	  background: #333333;
+	}
+	.partner{
+		height: 60px;
+		display: inline-block;
+		text-align: center;
+		line-height: 60px;
+	}
+	.partner img{
+		vertical-align: middle;
+	}
+	.media-carousel img{
+	}
+	/* End carousel */
+}

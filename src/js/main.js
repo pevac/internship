@@ -40,6 +40,6 @@ $(document).ready(function () {
 
 
     // init carousel
-    $("#projects").devcarousel(ServerApi);
+    //$("#projects").devcarousel(ServerApi);
 
 });

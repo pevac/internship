@@ -63,14 +63,14 @@ body{
 
 .btn-dev{
   background-color: $btn-dev-bg;
-  color: $default-color;
+  color: $base-light-color;
   border: none;
   border-radius: 10px;
   &:hover,
   &:focus,
   &.focus {
     background-color: $btn-dev-bg-hover;
-    color: $default-color;
+    color: $base-light-color;
     text-decoration: none;
   }
 }

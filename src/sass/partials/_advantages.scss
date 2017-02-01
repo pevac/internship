@@ -49,16 +49,71 @@
 		padding: 20px 10px 0px;
 		margin: auto;
 	}
+	.advantage_img{
+		line-height: 100px;
+		margin: auto;
+	}
+	.advantage_img .img{
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.img_first{
+		width: 50px;
+		height: 75px;
+		background-image: url(../img/advantage_first.png);
+		background-position: 0 0;
+	}
+	.img_second{
+		width: 96px;
+		height: 97px;
+		background-image: url(../img/advantage_second.png);
+		background-position: 0 0;
+	}
+	.img_third{
+		width: 87px;
+		height: 87px;
+		background-image: url(../img/advantage_third.png);
+		background-position: 0 0;
+	}
+	.img_fourth{
+		width: 66px;
+		height: 74px;
+		background-image: url(../img/advantage_fourth.png);
+		background-position: 0 0;
+	}
+	.img_fiveth{
+		width: 88px;
+		height: 88px;
+		background-image: url(../img/advantage_fiveth.png);
+		background-position: 0 0;
+	}
+	.img_sixth{
+		width: 103px;
+		height: 86px;
+		background-image: url(../img/advantage_sixth.png);
+		background-position: 0 0;
+	}
 	.advantage:hover{
 		background-image: url(../img/advantages_hover.png);
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	.advantage_img{
-		line-height: 100px;
-		margin: auto;
+	.advantage.first:hover .img_first{
+		background-position: -50px 0;
 	}
-	.advantage_img img{
-		vertical-align: middle;
+	.advantage.second:hover .img_second{
+		background-position: -96px 0;
+	}
+	.advantage.third:hover .img_third{
+		background-position: -87px 0;
+	}
+	.advantage.fourth:hover .img_fourth{
+		background-position: -66px 0;
+	}
+	.advantage.fiveth:hover .img_fiveth{
+		background-position: -88px 0;
+	}
+	.advantage.sixth:hover .img_sixth{
+		background-position: -103px 0;
 	}
 }

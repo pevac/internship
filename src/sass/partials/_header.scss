@@ -28,6 +28,9 @@
     	color: $base-dark-color;
     	padding: 0;
 	}
+	.navbar-default .navbar-nav > li > a{
+	 	color: $base-dark-color;
+	 }
 	.nav li {
 	    height: 50px;
 	    font-size: 14pt;
@@ -49,16 +52,17 @@
 		color: $dark-blue-green-color;
 		font-weight: 800;
 		background-color: $yellow-base-color;
+		border-bottom: 2px solid $dark-blue-green-color;
 	}
-	.avt li {
+	.avt .nav > li {
 		margin: 0 0 0 60px;
 	}
-	.avt li a {
+	.avt .nav > li > a {
 		color: $base-light-color;
 		font-family: 'PFBeauSansPro Bold', sans-serif;
 		font-weight: 800;
 	}
-	.avt li a:hover {
+	.avt .nav li a:hover {
     	color: $dark-blue-green-color;
 		border-bottom: 0px;
 	}

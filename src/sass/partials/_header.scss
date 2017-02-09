@@ -11,18 +11,6 @@
 	.navbar-brand img {
 		height: 40px;
 	}
-	.user-icon{
-		
-	}
-	.user-icon::before{
-		content: url(../img/user.png);
-		vertical-align: middle;
-		position: absolute;
-		left: -24px;
-		/*top: 2px;*/
-		top: -2px;
-		z-index: 1;
-	}
 	.nav li a {
 		height: 20px;
     	color: $base-dark-color;
@@ -53,9 +41,6 @@
 		font-weight: 800;
 		background-color: $yellow-base-color;
 		border-bottom: 2px solid $dark-blue-green-color;
-	}
-	.avt .nav > li {
-		margin: 0 0 0 60px;
 	}
 	.avt .nav > li > a {
 		color: $base-light-color;

@@ -1,8 +1,8 @@
 .join_us{
+	height: 670px;
 	background-image: url(../img/join_us.png);
 	background-position: center;
 	padding-top: 10px;
-	padding-bottom: 224px;
 	position: relative;
 	z-index: 1;
 	.info{
@@ -92,4 +92,14 @@
 	.test:active{
 		box-shadow: 0px 4px 4px 0px $dark-purple-shadow-color inset;
 	}
+}
+.join_us::after{
+	content: url(../img/join_us_after.png);
+	width: 86px;
+	height: 48px;
+	margin-left: -43px;
+	position: absolute;
+	top: 670px;
+	left: 50%;
+	z-index: 1;
 }

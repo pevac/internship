@@ -4,10 +4,10 @@
 
     init : function(options) {
       var defaults = {
-        duration: 200, // ms
-        dist: -160, // zoom scale TODO: make this more intuitive as an option
-        shift: -120, // spacing for center image
-        padding: -400, // Padding between non center items
+        duration: 600, // ms
+        dist: -80, // zoom scale TODO: make this more intuitive as an option
+        shift: -110, // spacing for center image
+        padding: -600, // Padding between non center items
         fullWidth: false, // Change to full width styles
         indicators: false, // Toggle indicators
         noWrap: false, // Don't wrap around and cycle through items.

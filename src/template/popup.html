@@ -1,20 +1,80 @@
 <div class="popup">
 	<div class="modal fade send_request" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	    <div class="modal-header">
-	    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
-	    </div>
-	    <div class="modal-body">
-	    	<div class="form">
-	    		<div><label for="login">Логін</label><input type="text" id="login"></div>
-	    		<div><label for="password">Пароль</label><input type="password" id="password"></div>
-	    		<p><span>Забули пароль?</span></p>
-	    		<button>УВІЙТИ</button>
-	    	</div>
-	    </div>
-	    <div class="modal-footer"></div>
-	    </div>
-	  </div>
+		<div class="modal-dialog request" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<div><label for="login">Логін</label><input type="text" id="login"></div>
+		    		<div><label for="password">Пароль</label><input type="password" id="password"></div>
+		    		<p><span>Забули пароль?</span></p>
+		    		<button>УВІЙТИ</button>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
+
+		<div class="modal-dialog send_success" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<p><span class="img img_success"><img src="img/success.png" alt="success"></span></p>
+		    		<p><span>Дякуємо! Вашу заявку було відправленно на перегляд до адміністратора, і з Вами зв'яжуться!</span></p>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
+
+		<div class="modal-dialog send_error_login" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<p><span class="img img_error"><img src="img/error.png" alt="error"></span></p>
+		    		<p><span>Введено не вірний логін, спробуйте ще раз.</span></p>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
+
+		<div class="modal-dialog send_error_password" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<p><span class="img img_error"><img src="img/error.png" alt="error"></span></p>
+		    		<p><span>Введено не вірний пароль, спробуйте ще раз.</span></p>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
+
+		<div class="modal-dialog send_error_notAlumnus" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<p><span class="img img_error"><img src="img/error.png" alt="error"></span></p>
+		    		<p><span>Вибачте, на жаль, ви не є випускником жодної з програм Bionic, тому наразі не можете надіслати заявку на участь в інтернатурі.</span></p>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
 	</div>
 </div>

@@ -1,9 +1,4 @@
 .popup{
-	label{
-		font-family: 'PFBeauSansPro Reg', sans-serif;
-		font-size: 18pt;
-		color: $dark-blue-base-color;
-	}
 	p{
 		font-family: 'PFBeauSansPro SemiBold', sans-serif;
 		font-size: 10pt;
@@ -22,6 +17,13 @@
 	}
 	.form div{
 		margin-bottom: 20px;
+	}
+	label{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 18pt;
+		color: $dark-blue-base-color;
+		padding-top: 2px;
+		cursor: pointer;
 	}
 	input{
 		width: 74%;

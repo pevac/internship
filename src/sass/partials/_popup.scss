@@ -1,0 +1,75 @@
+.popup{
+	label{
+		font-family: 'PFBeauSansPro Reg', sans-serif;
+		font-size: 18pt;
+		color: $dark-blue-base-color;
+	}
+	p{
+		font-family: 'PFBeauSansPro SemiBold', sans-serif;
+		font-size: 10pt;
+		color: $dark-blue-base-color;
+		text-align: right;
+		margin-bottom: 40px;
+	}
+	p > span{
+		cursor: pointer;
+	}
+	.form{
+		width: 80%;
+		margin: auto;
+		padding: 10px;
+		line-height: 20px;
+	}
+	.form div{
+		margin-bottom: 20px;
+	}
+	input{
+		width: 74%;
+		border-radius: 2px;
+		border: 1px solid #ccc;
+		float: right;
+		vertical-align: middle;
+	}
+	input:focus{
+		border: 2px solid $light-grey-purple-color;
+	}
+	.modal{
+		margin: auto;
+		top: 140px;
+		box-shadow: 0px 0px 0px 0px $base-light-color;
+	}
+	.modal-header{
+		border-bottom: none;
+	}
+	.modal-content{
+		/*width: 40%;*/
+		box-shadow: 0px 0px 0px 0px $base-light-color;
+		/*border: none;*/
+	}
+	.modal-footer{
+		border-top: none;
+	}
+	.close{
+		cursor: pointer;
+		float: right;
+	}
+	button{
+		font-family: 'PFBeauSansPro SemiBold', sans-serif;
+		font-size: 12pt;
+		color: $base-light-color;
+		display: block;
+		width: 100%;
+		padding: 6px 40px;
+		margin: auto;
+		background-color: $blue-base-color;
+		border-radius: 2px;
+		border: none;
+	}
+	button:hover{
+		background-color: $base-blue-popup-color;
+	}
+}
+	body div.modal-backdrop.fade.in{
+		background-color: white;
+		opacity: 1;
+	}

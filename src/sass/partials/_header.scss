@@ -1,6 +1,7 @@
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar";
 
 .header {
+	z-index: 1060;
 	.navbar-yellow {
 		background-color: $yellow-base-color;
 	}

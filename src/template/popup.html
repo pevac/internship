@@ -1,14 +1,14 @@
 <div class="popup">
 	<div class="modal fade send_request" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-		<div class="modal-dialog request" role="document">
+		<div class="modal-dialog singin" role="document">
 		    <div class="modal-content">
 		    <div class="modal-header">
 		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
 		    </div>
 		    <div class="modal-body">
 		    	<div class="form">
-		    		<div><label for="login">Логін</label><input type="text" id="login"></div>
-		    		<div><label for="password">Пароль</label><input type="password" id="password"></div>
+		    		<div><label for="login">Логін</label><input type="text" id="login" class="login"></div>
+		    		<div><label for="password">Пароль</label><input type="password" id="password" class="password"></div>
 		    		<p><span>Забули пароль?</span></p>
 		    		<button class="sing_in">УВІЙТИ</button>
 		    	</div>
@@ -17,10 +17,36 @@
 		    </div>
 		</div>
 
-		<div class="modal-dialog send_success can_close" role="document">
+		<div class="modal-dialog request" role="document">
 		    <div class="modal-content">
 		    <div class="modal-header">
-		    	<a class="close" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a> <!-- data-dismiss="modal"-->
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form">
+		    		<div><label for="login">Прізвище</label><input type="text" placeholder="Hello" class="fname"></div>
+		    		<div><label for="password">Ім'я</label><input type="password" placeholder="World" class="lname"></div>
+		    		<p>
+			    		<form action="">
+			    			<label class="label_checkbox">Front-end Development/верстка<input type="checkbox" class="checkbox"></label>
+			    			<label class="label_checkbox">Front-end Development/JavaScript<input type="checkbox" class="checkbox"></label>
+			    			<label class="label_checkbox">Java Enterprise<input type="checkbox" class="checkbox"></label>
+			    			<label class="label_checkbox">ASP.NETQ<input type="checkbox" class="checkbox"></label>
+			    			<label class="label_checkbox">Quality Assurance<input type="checkbox" class="checkbox"></label>
+			    			<label class="label_checkbox">Business Analysis<input type="checkbox" class="checkbox"></label>
+			    		</form>
+		    		</p>
+		    		<button class="send">НАДІСЛАТИ</button>
+		    	</div>
+		    </div>
+		    <div class="modal-footer"></div>
+		    </div>
+		</div>
+
+		<div class="modal-dialog send_success" role="document">
+		    <div class="modal-content">
+		    <div class="modal-header">
+		    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/close_information.png"></span></a>
 		    </div>
 		    <div class="modal-body">
 		    	<div class="form">

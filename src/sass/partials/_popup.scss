@@ -8,15 +8,18 @@
 		color: $dark-blue-base-color;
 		text-align: center;
 	}
-	.request p{
+	.singin p{
 		font-family: 'PFBeauSansPro SemiBold', sans-serif;
 		font-size: 12px;
 		color: $dark-blue-base-color;
 		text-align: right;
 		margin-bottom: 40px;
 	}
-	.request p > span{
+	.singin p > span{
 		cursor: pointer;
+	}
+	.request p{
+		text-align: left;
 	}
 	.form{
 		width: 80%;
@@ -34,7 +37,13 @@
 		padding-top: 2px;
 		cursor: pointer;
 	}
-	input{
+	.label_checkbox{
+		font-family: 'PFBeauSansPro Reg', sans-seri;
+		font-size: 12pt;
+		color: $grey-purple-color;
+		display: block;
+	}
+	.login, .password, .fname, .lname{
 		width: 74%;
 		border-radius: 2px;
 		border: 1px solid #ccc;
@@ -44,7 +53,12 @@
 	input:focus{
 		border: 2px solid $light-grey-purple-color;
 	}
+	.checkbox{
+		float: left;
+		margin-right: 10px;
+	}
 	.modal{
+		height: 500px;
 		margin: auto;
 		top: 140px;
 		box-shadow: 0px 0px 0px 0px $base-light-color;
@@ -80,6 +94,9 @@
 	button:hover{
 		background-color: $base-blue-popup-color;
 	}
+	.send{
+		margin-top: 10px;
+	}
 	.modal-dialog.send_success .modal-content{
 		border: none;
 		border-radius: 0;
@@ -100,6 +117,7 @@
 		border-radius: 0;
 		background-color: $light-grey-purple-color;
 	}
+	.modal-dialog.request,
 	.modal-dialog.send_success,
 	.modal-dialog.send_error_login,
 	.modal-dialog.send_error_password,

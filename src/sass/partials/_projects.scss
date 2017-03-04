@@ -63,7 +63,10 @@
 		clear: both;
 		margin-bottom: 20px;
 	}
-	.caption_second h3, .caption_sixth h3, .caption_second h4, .caption_sixth h4{
+	.caption_second h3, .caption_sixth h3, 
+	.caption_second h4, .caption_sixth h4, 
+	.caption_eight h3, .caption_twelfth h3, 
+	.caption_eight h4, .caption_twelfth h4{
 		color: $base-light-color;
 	}
 	.lines{
@@ -146,69 +149,60 @@
 	.caption img{
 		position: absolute;
 	}
-	.caption_first{
+	.caption_first, .caption_seventh{
 		width: 288.266px;
 		height: 230.797px;
 		background-color: $pink-base-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.caption_second{
+	.caption_second, .caption_eighth{
 		width: 288.266px;
 		height: 230.797px;	
 		background-color: $blue-base-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.caption_third{
+	.caption_third, .caption_nineth{
 		width: 288.266px;
 		height: 230.797px;
 		background-color: $yellow-base-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.caption_fourth{
+	.caption_fourth, .caption_tenth{
 		width: 288.266px;
 		height: 230.797px;
 		background-color: $light-pink-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.caption_fiveth{
+	.caption_fiveth, .caption_eleventh{
 		width: 288.266px;
 		height: 230.797px;
 		background-color: $azure-base-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.caption_sixth{
+	.caption_sixth, .caption_twelfth{
 		width: 288.266px;
 		height: 230.797px;
 		background-color: $dark-pink-hover-color;
 		opacity: 0.9;
 		visibility: hidden;
 	}
-	.effect_first:hover .caption_first{
-		visibility: visible;
-		cursor: pointer;
-	}
-	.effect_second:hover .caption_second{
-		visibility: visible;
-		cursor: pointer;
-	}
-	.effect_third:hover .caption_third{
-		visibility: visible;
-		cursor: pointer;
-	}
-	.effect_fourth:hover .caption_fourth{
-		visibility: visible;
-		cursor: pointer;
-	}
-	.effect_fiveth:hover .caption_fiveth{
-		visibility: visible;
-		cursor: pointer;
-	}
-	.effect_sixth:hover .caption_sixth{
+	.effect_first:hover .caption_first,
+	.effect_second:hover .caption_second,
+	.effect_third:hover .caption_third,
+	.effect_fourth:hover .caption_fourth,
+	.effect_fiveth:hover .caption_fiveth,
+	.effect_sixth:hover .caption_sixth,
+	.effect_seventh:hover .caption_seventh,
+	.effect_eighth:hover .caption_eighth,
+	.effect_nineth:hover .caption_nineth,
+	.effect_tenth:hover .caption_tenth,
+	.effect_eleventh:hover .caption_eleventh,
+	.effect_twelfth:hover .caption_twelfth{
 		visibility: visible;
 		cursor: pointer;
 	}
@@ -217,7 +211,6 @@
 		height: 491.594px;
 		padding: 40px 20px;
 		position: absolute;
-		/*top: 2px;*/
 		top: 0px;
 		left: 0;
 		z-index: 2;
@@ -230,22 +223,22 @@
 		right: 10px;
 		cursor: pointer;
 	}
-	.information.information_first{
+	.information.information_first, .information.information_seventh{
 		left: 318.266px;
 	}
-	.information.information_second{
+	.information.information_second,.information.information_eighth{
 		left: 318.266px;
 	}
-	.information.information_third{
+	.information.information_third, .information.information_nineth{
 		left: 636.266px;
 	}
-	.information.information_fourth{
+	.information.information_fourth, .information.information_tenth{
 		
 	}
-	.information.information_fiveth{
+	.information.information_fiveth, .information.information_eleventh{
 		left: 318.266px;
 	}
-	.information.information_sixth{
+	.information.information_sixth, .information.information_twelfth{
 		left: 318.266px;
 	}
 }

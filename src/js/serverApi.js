@@ -21,15 +21,30 @@ var project10_info = document.getElementById('information_tenth');
 var project11_info = document.getElementById('information_eleventh');
 var project12_info = document.getElementById('information_twelfth');
 
+var proj1_img = document.getElementById('proj_img1');
+var proj2_img = document.getElementById('proj_img2');
+var proj3_img = document.getElementById('proj_img3');
+var proj4_img = document.getElementById('proj_img4');
+var proj5_img = document.getElementById('proj_img5');
+var proj6_img = document.getElementById('proj_img6');
+var proj7_img = document.getElementById('proj_img7');
+var proj8_img = document.getElementById('proj_img8');
+var proj9_img = document.getElementById('proj_img9');
+var proj10_img = document.getElementById('proj_img10');
+var proj11_img = document.getElementById('proj_img11');
+var proj12_img = document.getElementById('proj_img12');
+
 
 //http://62.80.173.67:8888/dev-studio/api/public/internshipprojects
 
 $(document).ready(function(){
 	var ourRequest = new XMLHttpRequest();
 	var ourInformation = new XMLHttpRequest();
+	var ourInfoImg = new XMLHttpRequest();
 
 	ourRequest.open('GET', 'http://62.80.173.67:8888/dev-studio/api/internshipfeedbacks');
 	ourInformation.open('GET', 'http://62.80.173.67:8888/dev-studio/api/public/internshipprojects');
+	ourInfoImg.open("GET", 'http://62.80.173.67:8888/dev-studio/api/public/internshipprojects');
 
 	ourRequest.onload = function(){
 		var ourData = JSON.parse(ourRequest.responseText);
@@ -39,9 +54,14 @@ $(document).ready(function(){
 		var ourInfo = JSON.parse(ourInformation.responseText);
 		addProjectsInfo(ourInfo);
 	}
+	ourInfoImg.onload = function(){
+		var ourImg = JSON.parse(ourInfoImg.responseText);
+		addProjectsImg(ourImg);
+	}
 
 	ourRequest.send();
 	ourInformation.send();
+	ourInfoImg.send();
 
 });
 
@@ -183,14 +203,6 @@ function addProjectsInfo(date){
 	'<p>Sponsored link</p>';
 	project5_info.insertAdjacentHTML('beforeend', info_project5);
 
-	info_project5 += '<h5>' + date[4].name + '</h5>' +
-	'<h6><img src="img/' + date[4].img + '" alt=""><span>' + 
-	date[4].shortDescription + '</span></h6>' + 
-	'<div class="both"></div>' +
-	'<p>' + date[4].description + '</p>' + 
-	'<p>Sponsored link</p>';
-	project5_info.insertAdjacentHTML('beforeend', info_project5);
-
 	info_project6 += '<h5>' + date[5].name + '</h5>' +
 	'<h6><img src="img/' + date[5].img + '" alt=""><span>' + 
 	date[5].shortDescription + '</span></h6>' + 
@@ -239,4 +251,62 @@ function addProjectsInfo(date){
 	'<p>Sponsored link</p>';
 	project11_info.insertAdjacentHTML('beforeend', info_project11);
 
+	info_project12 += '<h5>' + date[11].name + '</h5>' +
+	'<h6><img src="img/' + date[11].img + '" alt=""><span>' + 
+	date[11].shortDescription + '</span></h6>' + 
+	'<div class="both"></div>' +
+	'<p>' + date[11].description + '</p>' + 
+	'<p>Sponsored link</p>';
+	project12_info.insertAdjacentHTML('beforeend', info_project12);
 };
+
+function addProjectsImg(date){
+	var img_proj1 = '';
+	var img_proj2 = '';
+	var img_proj3 = '';
+	var img_proj4 = '';
+	var img_proj5 = '';
+	var img_proj6 = '';
+	var img_proj7 = '';
+	var img_proj8 = '';
+	var img_proj9 = '';
+	var img_proj10 = '';
+	var img_proj11 = '';
+	var img_proj12 = '';
+
+	img_proj1 += '<img src="img/' + date[0].img + '" alt="Image" style="max-width:100%;">';
+	proj1_img.insertAdjacentHTML('beforeend', img_proj1);
+
+	img_proj2 += '<img src="img/' + date[1].img + '" alt="Image" style="max-width:100%;">';
+	proj2_img.insertAdjacentHTML('beforeend', img_proj2);
+
+	img_proj3 += '<img src="img/' + date[2].img + '" alt="Image" style="max-width:100%;">';
+	proj3_img.insertAdjacentHTML('beforeend', img_proj3);
+
+	img_proj4 += '<img src="img/' + date[3].img + '" alt="Image" style="max-width:100%;">';
+	proj4_img.insertAdjacentHTML('beforeend', img_proj4);
+
+	img_proj5 += '<img src="img/' + date[4].img + '" alt="Image" style="max-width:100%;">';
+	proj5_img.insertAdjacentHTML('beforeend', img_proj5);
+
+	img_proj6 += '<img src="img/' + date[5].img + '" alt="Image" style="max-width:100%;">';
+	proj6_img.insertAdjacentHTML('beforeend', img_proj6);
+
+	img_proj7 += '<img src="img/' + date[6].img + '" alt="Image" style="max-width:100%;">';
+	proj7_img.insertAdjacentHTML('beforeend', img_proj7);
+
+	img_proj8 += '<img src="img/' + date[7].img + '" alt="Image" style="max-width:100%;">';
+	proj8_img.insertAdjacentHTML('beforeend', img_proj8);
+
+	img_proj9 += '<img src="img/' + date[8].img + '" alt="Image" style="max-width:100%;">';
+	proj9_img.insertAdjacentHTML('beforeend', img_proj9);
+
+	img_proj10 += '<img src="img/' + date[9].img + '" alt="Image" style="max-width:100%;">';
+	proj10_img.insertAdjacentHTML('beforeend', img_proj10);
+
+	img_proj11 += '<img src="img/' + date[10].img + '" alt="Image" style="max-width:100%;">';
+	proj11_img.insertAdjacentHTML('beforeend', img_proj11);
+
+	img_proj12 += '<img src="img/' + date[11].img + '" alt="Image" style="max-width:100%;">';
+	proj12_img.insertAdjacentHTML('beforeend', img_proj12);
+}

@@ -29,11 +29,9 @@
 	    line-height: 14px;
 	}
 	.nav li:first-child {
-		/*margin: 0;*/
 	}
 	.nav li a:hover {
 	    color: $dark-blue-green-color;
-	    /*font-family: 'PFBeauSansPro Bold', sans-serif;*/
 	    font-weight: 800;
 	    border-bottom: 2px solid $dark-blue-green-color;
 	}
@@ -51,6 +49,7 @@
 	.avt .nav li a:hover {
     	color: $dark-blue-green-color;
 		border-bottom: 0px;
+		cursor: pointer;
 	}
 	.navbar-default .navbar-header .navbar-toggle{
 		border-color: $yellow-base-color;
